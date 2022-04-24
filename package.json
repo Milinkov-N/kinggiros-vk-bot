@@ -1,0 +1,19 @@
+{
+  "name": "kinggiros-vk-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vk-io/hear": "^1.1.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.2.3",
+    "node-vk-bot-api": "^3.5.0",
+    "vk-io": "^4.5.2"
+  }
+}
