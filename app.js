@@ -24,6 +24,7 @@ vk.updates.on('market_order_new', async () => {
     delivery: { address },
     total_price: { text: total },
     preview_order_items: items,
+    payment: { status: paymentStatus },
     comment
   } = await getLastOrder()
 
@@ -36,6 +37,7 @@ vk.updates.on('market_order_new', async () => {
     address,
     total,
     orderDetails,
+    paymentStatus,
     comment
   })
 

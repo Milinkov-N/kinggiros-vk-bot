@@ -36,11 +36,12 @@ export function newOrderMessage({
     address,
     total,
     orderDetails,
+    paymentStatus,
     comment
 }){
   const currentDate = new Date()
-  const dateStr = currentDate.toLocaleDateString()
-  const timeStr = currentDate.toLocaleTimeString()
+  const dateStr = currentDate.toLocaleDateString('ru-RU')
+  const timeStr = currentDate.toLocaleTimeString('ru-RU')
 
   return `
 Новый заказ в группе King Giros!
@@ -52,6 +53,7 @@ ${ dateStr } / ${ timeStr }
 Телефон - ${ phone }
 Адрес доставки - ${ address }
 Комментарий: ${ comment }
+Статус оплаты: ${ paymentStatus }
 
 ДЕТАЛИ ЗАКАЗА:
 ${ orderDetails }
