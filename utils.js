@@ -41,7 +41,7 @@ export function newOrderMessage({
 }){
   const currentDate = new Date()
   const dateStr = currentDate.toLocaleDateString('ru-RU')
-  const timeStr = currentDate.toLocaleTimeString('ru-RU')
+  const timeStr = currentDate.toLocaleTimeString('ru-RU', { timeZone: 'Europe/Samara' })
 
   return `
 Новый заказ в группе King Giros!
